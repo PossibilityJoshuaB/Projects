@@ -1,0 +1,48 @@
+body {
+    height: 100vh;
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.txtbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 400px;
+    anchor-name: --txtbox;
+}
+
+.button {
+    position-anchor: --txtbox;
+    position: absolute;
+    position-area: bottom center;
+}
+
+.link {
+    color: blue;
+    position: absolute;
+    left: 90%;
+}
+
+.form {
+    display: table;
+    margin-top: 20 px;
+    margin-right: 20 px;
+}
+
+.formItem {
+    display: table-row;
+}
+
+label,
+input {
+    display: table-cell;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+input {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 10px;
+}
