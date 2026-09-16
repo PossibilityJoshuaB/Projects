@@ -1,0 +1,163 @@
+{
+    "version": 1,
+    "author": "Joshua Byju",
+    "editor": "wokwi",
+    "parts": [
+        {
+            "type": "wokwi-arduino-uno",
+            "id": "uno",
+            "top": 0.6,
+            "left": -0.6,
+            "attrs": {}
+        },
+        {
+            "type": "wokwi-analog-joystick",
+            "id": "joystick1",
+            "top": -10.2,
+            "left": 322.2,
+            "attrs": {}
+        },
+        {
+            "type": "wokwi-stepper-motor",
+            "id": "stepper1",
+            "top": -265.19,
+            "left": -47.57,
+            "attrs": {
+                "size": "17"
+            }
+        },
+        {
+            "type": "wokwi-stepper-motor",
+            "id": "stepper2",
+            "top": -265.19,
+            "left": 125.23,
+            "attrs": {
+                "size": "17"
+            }
+        }
+    ],
+    "connections": [
+        [
+            "joystick1:GND",
+            "uno:GND.2",
+            "black",
+            [
+                "v124.8",
+                "h-224.7"
+            ]
+        ],
+        [
+            "joystick1:VCC",
+            "uno:5V",
+            "red",
+            [
+                "v134.4",
+                "h-67.2",
+                "h-128.6"
+            ]
+        ],
+        [
+            "joystick1:SEL",
+            "uno:2",
+            "orange",
+            [
+                "v9.6",
+                "h-76.8",
+                "v-124.8",
+                "h-71.3"
+            ]
+        ],
+        [
+            "joystick1:VERT",
+            "uno:A0",
+            "green",
+            [
+                "v105.6",
+                "h-153.6"
+            ]
+        ],
+        [
+            "uno:A1",
+            "joystick1:HORZ",
+            "blue",
+            [
+                "v28.7",
+                "h147.9"
+            ]
+        ],
+        [
+            "stepper1:A-",
+            "uno:13",
+            "green",
+            [
+                "v76.8",
+                "h105.6"
+            ]
+        ],
+        [
+            "stepper1:A+",
+            "uno:12",
+            "green",
+            [
+                "v67.2",
+                "h96"
+            ]
+        ],
+        [
+            "stepper1:B+",
+            "uno:11",
+            "green",
+            [
+                "v57.6",
+                "h105.6",
+                "v48"
+            ]
+        ],
+        [
+            "stepper1:B-",
+            "uno:10",
+            "green",
+            [
+                "v48",
+                "h105.59"
+            ]
+        ],
+        [
+            "stepper2:A-",
+            "uno:9",
+            "gold",
+            [
+                "v48",
+                "h-28.8"
+            ]
+        ],
+        [
+            "stepper2:A+",
+            "uno:8",
+            "gold",
+            [
+                "v57.6",
+                "h-28.8"
+            ]
+        ],
+        [
+            "stepper2:B+",
+            "uno:7",
+            "gold",
+            [
+                "v67.2",
+                "h-28.8"
+            ]
+        ],
+        [
+            "stepper2:B-",
+            "uno:6",
+            "gold",
+            [
+                "v76.8",
+                "h-19.21"
+            ]
+        ]
+    ],
+    "dependencies": {}
+}
